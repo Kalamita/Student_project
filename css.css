@@ -1,0 +1,292 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+article,aside,footer,header,nav,section{
+	display:block;
+}
+
+@font-face{
+	font-family:Comic Sans MS;
+	src:url(fontovi/comic.ttf);
+}
+
+
+body{
+	background-image:url(slike/pozadina.jpg);
+	font-size:20px;
+	font-family:"Comic Sans MS";
+}
+
+ol,ul{
+	list-style:none;
+}
+
+a{
+	border:none;
+	color:#333;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#F00;
+	text-decoration:line-through;
+}
+
+p{
+	margin:0 0 10px;
+	line-height:18px;
+	font-size:16px;
+}
+
+img{
+	display: block;
+	margin-bottom: 0px;
+}
+
+aside p{
+	font-style:italic;
+	font-size:13px;
+}
+
+footer{
+	clear:both;
+	background:#e9e9e7;
+	float:none;
+	height:20px;
+	border-top:1px solid #666;
+	margin-right:750px;
+}
+
+#wrapper{
+	width:96%;
+	max-width:920px;
+	margin:auto;
+	padding:10px;
+	background:#e9e9e7;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+
+#glavna{
+	width:60%;
+	margin-right:5%;
+	float:left;
+	padding:5px;
+}
+
+#glavnab,#glavnak,#glavnas{
+	width:60%;
+	margin-right:5%;
+	float:left;
+	padding:5px;
+}
+
+#glavnao{
+	display:block;
+	width:100%;
+	margin-bottom:30px;
+	margin-left:90px;
+	padding:5px;
+	float:left;
+	margin-right:5%;
+	margin-top:20px;
+}
+
+#glavnao img{
+	display:inline;
+	padding:10px;
+}
+
+aside{
+	width:35%;
+	float:right;
+}
+
+#glavna{
+	width:50%;
+	float:left;
+}
+
+#glavnab,#glavnak,#glavnas{
+	width:50%;
+	float:left;
+	padding-top:20px;
+}
+
+header h1{
+	float:left;
+	height:83px;
+	width:340px;
+	background:url(slike/paint%20brush6.jpg) no-repeat 0 0;
+	text-indent:-9999px;
+	margin-left:40px;
+}
+
+header nav{
+	float:right;
+	margin-top:40px;
+}
+
+header nav li{
+	display:inline;
+	margin-left:15px;
+}
+
+#glavna nav{
+	float:left;
+}
+
+#glavna nav li{
+	display:inline;
+	margin-left:0px;
+	font-size:12px;
+}
+
+#banner,#slikaaside{
+	clear:both;
+	margin-bottom:15px;
+	width:100%;
+}
+
+#banner img{
+	width:100%;
+}
+
+#slikaaside img{
+	width:100%;
+}
+
+
+
+footer p{
+	font-size:12px;
+	float:left;
+	padding:5px;
+	color:#666;
+}
+
+#glavna h1{
+	font-size:22px;
+	padding-bottom:15px;
+	padding-top:5px;
+	color:#333;
+}
+
+#glavna p{
+	font-size:13px;
+	
+}
+
+#glavnab p,#glavnak p,#glavnas p{
+	font-size:13px;
+	
+}
+
+aside h1{
+	font-size:22px;
+	padding-bottom:15px;
+	padding-top:5px;
+	color:#333;
+}
+
+#slikaaside img{
+	padding-top:20px;
+}
+
+#sledeci{
+	display:inline;
+	float:right;
+}
+
+/*kontakt*/
+
+form input, form textarea {
+	border: 1px solid #666;
+	width: 97%;
+	font-family:"Comic Sans MS";
+	font-size: 15px;
+	color: #666;
+	border-radius: 5px;
+	padding: 5px;
+	float:left;
+}
+form textarea {
+	height: 200px;
+	width:400px;
+}
+form button {
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #333333;
+	transition: .2s;
+	background-color: #333333;
+	color: white;
+	float: right;
+	font-family:"Comic Sans MS";
+}
+form button:hover {
+	border: 1px solid #333333;
+	background-color: transparent;
+	color: #333333;
+}
+
+div#forma{
+	float:left;
+	margin-top:0px;
+	width:500px;
+	margin-left:0px;
+	display:block;
+	font-size:15px;
+}
+
+
+@media screen and (max-width:480px) {
+	header h1{
+		display:block;
+		float:none;
+		text-align:center;
+		}
+	header nav,#glavna,#glavnab,aside,#glavnak,#glavnas{
+		float:none;
+		margin:0 0 10px;
+		width:100%;
+	}	
+	
+	#glavnao{
+		float:none;
+		margin-left:10px;
+		margin-right:10px;
+		width:100%;
+		margin-bottom:0px;
+	}
+	
+	header nav li{
+		margin:0;
+		display:block;
+		margin-bottom:3px;
+	}
+	
+	header nav a{
+		display:block;
+		padding:10px;
+		text-align:center;
+	}
+	footer p{
+		float:none;
+	}
+	
+	footer{
+		margin-right:200px;
+	}
+	
+	form input,form textarea{
+		width:100%;
+	}
+	
+
+}
